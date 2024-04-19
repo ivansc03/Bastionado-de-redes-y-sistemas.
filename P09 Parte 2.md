@@ -1,10 +1,10 @@
 ## Parte 2
 
-Primero instalamos el servicio web en mi VPS, en mi caso usare nginx. Para ello, dentro de mi VPS, ponemos los comandos: “sudo apt update” y “sudo apt install nginx”
+Primero instalamos el servicio web en mi VPS, en mi caso usare nginx. Para ello, dentro de mi VPS, ponemos los comandos: “sudo apt update” y “sudo apt install nginx”.
 
 ![](Aspose.Words.01340cf9-db5d-4ef9-9298-1e3d7311ed00.008.png)
 
-Crearemos una pagina de prueba dentro de nginx en html para visualizarla en nuestro servidor 
+Crearemos una pagina de prueba dentro de nginx en html para visualizarla en nuestro servidor.
 
 ![](Aspose.Words.01340cf9-db5d-4ef9-9298-1e3d7311ed00.009.png)
 
@@ -12,7 +12,7 @@ Crearemos una pagina de prueba dentro de nginx en html para visualizarla en nues
 
 
 
-Creamos el nombre de dominio mediante la página web “www.duckdns.org”
+Creamos el nombre de dominio mediante la página web “www.duckdns.org”.
 
 ![](Aspose.Words.01340cf9-db5d-4ef9-9298-1e3d7311ed00.011.png)
 
@@ -28,27 +28,25 @@ Tras realizar estas configuraciónes, podemos acceder a la pagina del servidor c
 
 Para configurar HTTPS con un certificado válido, vamos a realizar la siguiente configuración en el servidor:
 
-Primero, ejecutamos este comando para instalar Certbot “sudo snap install --classic certbot”
+Primero, ejecutamos este comando para instalar Certbot “sudo snap install --classic certbot”.
 
 ![](Aspose.Words.01340cf9-db5d-4ef9-9298-1e3d7311ed00.015.png)
 
-Luego, ejecutamos la siguiente instrucción en la línea de comando para asegurarnos de que el certbot comando se pueda ejecutar, ”sudo ln -s /snap/bin/certbot /usr/bin/certbot”
+Luego, ejecutamos la siguiente instrucción en la línea de comando para asegurarnos de que el certbot comando se pueda ejecutar, ”sudo ln -s /snap/bin/certbot /usr/bin/certbot”.
 
 ![](Aspose.Words.01340cf9-db5d-4ef9-9298-1e3d7311ed00.016.png)
 
 
 
-Después, ejecutamos este comando para obtener un certificado y haga que Certbot edite su configuración de nginx automáticamente para entregarlo, activando el acceso HTTPS en un solo paso, “sudo certbot –nginx”
+Después, ejecutamos este comando para obtener un certificado y haga que Certbot edite su configuración de nginx automáticamente para entregarlo, activando el acceso HTTPS en un solo paso, “sudo certbot –nginx”.
 
-![ref1]
+![](Aspose.Words.01340cf9-db5d-4ef9-9298-1e3d7311ed00.018.png)
 
-![ref2]
-
-A continuación, probamos la renovación automática de sus certificados ejecutando este comando “sudo certbot renew --dry-run”
+A continuación, probamos la renovación automática de sus certificados ejecutando este comando “sudo certbot renew --dry-run”.
 
 ![](Aspose.Words.01340cf9-db5d-4ef9-9298-1e3d7311ed00.019.png)
 
-Captura de pantalla certificado 
+Captura de pantalla certificado.
 
 ![](Aspose.Words.01340cf9-db5d-4ef9-9298-1e3d7311ed00.020.png)
 
