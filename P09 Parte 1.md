@@ -1,9 +1,9 @@
 ﻿## Parte 1
-Primero nos registramos en digitalocean, y a continuación creamos el droplet ![](Aspose.Words.01340cf9-db5d-4ef9-9298-1e3d7311ed00.001.png)
+Primero nos registramos en digitalocean, y a continuación creamos el droplet. ![](Aspose.Words.01340cf9-db5d-4ef9-9298-1e3d7311ed00.001.png)
 
 Posteriormente, elegimos la región relativamente cerca de nuestra ubicación, elegimos el sistema operativo y el plan para nuestro VPS. 
 
-En este apartado generaremos la calve ssh publica y privada con la cual podremos
+En este apartado generaremos la calve ssh publica y privada con la cual podremos acceder sin contraseña mediante ssh.
 
 ![](Aspose.Words.01340cf9-db5d-4ef9-9298-1e3d7311ed00.002.png)
 
@@ -20,7 +20,7 @@ Primero generaremos las claves de shh, y a continuación la añadiremos a nuestr
 
 
 
-Con esta configuración ya podemos crear nuestro droplets
+Con esta configuración ya podemos crear nuestro droplets.
 
 ![](Aspose.Words.01340cf9-db5d-4ef9-9298-1e3d7311ed00.006.png)
 
